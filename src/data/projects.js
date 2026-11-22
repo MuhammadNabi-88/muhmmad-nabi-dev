@@ -2,7 +2,7 @@ export const profile = {
   name: "Muhammad Nabi",
   email: "muhmdnabi.dev@yahoo.com",
   github: "https://github.com/MuhammadNabi-88",
-  // TODO: paste your LinkedIn profile URL here, the link appears automatically.
+  // TODO: paste  LinkedIn profile URL here.
   linkedin: ""
 };
 
@@ -18,6 +18,14 @@ export const categories = [
     accent: "#2F5BFF",
     tint: "#E3EAFF"
   },
+   {
+    id: "react",
+    title: "React & TypeScript",
+    stack: "React, TypeScript",
+    blurb: "Component-based interfaces, API integrations and responsive layouts.",
+    accent: "#0A97B8",
+    tint: "#D9F2F8"
+  },
   {
     id: "javascript",
     title: "JavaScript Applications",
@@ -25,14 +33,6 @@ export const categories = [
     blurb: "Interactive apps that talk to real APIs.",
     accent: "#D69500",
     tint: "#FFF0C7"
-  },
-  {
-    id: "react",
-    title: "React & TypeScript",
-    stack: "React, TypeScript",
-    blurb: "Component-based interfaces, API integrations and responsive layouts.",
-    accent: "#0A97B8",
-    tint: "#D9F2F8"
   },
   {
     id: "web",
@@ -120,6 +120,17 @@ export const projects = [
       "Flight booking application with flight search, booking flow and PDF ticket generation.",
     technologies: ["JavaScript", "Amadeus API", "jsPDF", "HTML"],
     demo: "https://muhammadnabi-88.github.io/-FlyMetzingen-/",
+    github
+  },
+   {
+    id: "dashboard",
+    title: "FinancePro Dashboard",
+    categories: ["Java", "Spring Boot", "react"],
+    art: "grid",
+    description:
+      "Full-stack finance dashboard for income, expenses, budgets and savings.Track transactions, see balance and savings rate in real time.Frontend in React + TypeScript, Backend in Java Spring Boot with REST API.",
+    technologies: ["React", "Java", "Spring Boot"],
+    demo: "https://financepro-frontend.vercel.app/",
     github
   },
   {
