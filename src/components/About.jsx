@@ -1,41 +1,28 @@
+import { profile } from "../data/projects";
 
 function About() {
   return (
-    <section className="section container" id="about">
-      <div className="section-heading">
-        <span>ABOUT ME</span>
-        <h2>Developer with a practical mindset.</h2>
+    <section className="section container split" id="about">
+      <div className="section-head">
+        <h2>Developer with a practical mindset</h2>
       </div>
 
-      <div className="about-grid">
+      <div className="prose">
         <p>
-          I am a Fachinformatiker für Anwendungsentwicklung
-          with practical experience in web development.
-          I enjoy building modern interfaces and solving
-          technical problems.
+          I trained as a Fachinformatiker für Anwendungsentwicklung and have
+          hands-on experience building web applications. I like turning a messy
+          requirement into a clear, working interface and finding the cause of
+          a bug rather than working around it.
         </p>
-
         <p>
-          My technical interests include React, JavaScript,
-          TypeScript, PHP, Python, Java and database
-          technologies. I value clean code, teamwork
-          and continuous learning.
+          My interests cover React, JavaScript, TypeScript, Java with Spring
+          Boot, PHP, Python and relational databases. I care about clean code,
+          working well in a team and learning something new on every project.
         </p>
+        <a href={profile.github} target="_blank" rel="noreferrer" className="btn ghost">
+          See my code on GitHub
+        </a>
       </div>
-      <div className="hero-buttons">
-          {/* <a href="#projects" className="button primary">
-            Explore My Work ↗
-          </a> */}
-
-          <a
-            href="https://mnabi99.github.io/NoCV_onlyWork/about.html"
-            target="_blank"
-            rel="noreferrer"
-            className="button secondary"
-          >
-            GitHub Profile ↗
-          </a>
-        </div>
     </section>
   );
 }

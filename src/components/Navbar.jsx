@@ -1,23 +1,28 @@
+const links = [
+  ["Projects", "#projects"],
+  ["About", "#about"],
+  ["Expertise", "#expertise"],
+  ["Experience", "#experience"]
+];
 
 function Navbar() {
   return (
-    <nav className="navbar container">
-      <a href="#home" className="logo">
-        Muhammad Nabi
-        <span> WEB-APP-ENTWICKLER</span>
-      </a>
+    <header className="nav">
+      <nav className="nav-inner container" aria-label="Main">
+        <a href="#home" className="logo">
+          Muhammad Nabi
+          <small>Web-App-Entwickler</small>
+        </a>
 
-      <div className="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-      </div>
+        <ul className="nav-links">
+          {links.map(([label, href]) => (
+            <li key={href}><a href={href}>{label}</a></li>
+          ))}
+        </ul>
 
-      <a href="#contact" className="nav-button">
-        Contact Me ↗
-      </a>
-    </nav>
+        <a href="#contact" className="btn primary nav-cta">Contact</a>
+      </nav>
+    </header>
   );
 }
 

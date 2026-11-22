@@ -1,45 +1,25 @@
-
-import { useState } from "react";
-import { projects } from "../data/projects";
-import ProjectCard from "./ProjectCard";
+import { categories, projects } from "../data/projects";
+import ProjectCarousel from "./ProjectCarousel";
 
 function Projects() {
-  const [category, setCategory] = useState("All");
-
-  const categories = [
-    "All", "JavaScript", "PHP", "Python", "Java"
-  ];
-
-  const filteredProjects =
-    category === "All"
-      ? projects
-      : projects.filter((p) => p.category === category);
-
   return (
     <section className="section container" id="projects">
-      <div className="section-heading">
-        <span>SELECTED WORK</span>
-        <h2>Projects that demonstrate my skills.</h2>
-        <p>Practical applications and development work.</p>
+      <div className="section-head">
+        <h2>Selected projects</h2>
+        <p>
+          Applications I built, grouped by technology. Each one has its source
+          code on GitHub, and most have a live demo.
+        </p>
       </div>
 
-      <div className="filters">
-        {categories.map((item) => (
-          <button
-            key={item}
-            onClick={() => setCategory(item)}
-            className={category === item ? "filter active" : "filter"}
-          >
-            {item}
-          </button>
-        ))}
-      </div>
-
-      <div className="projects-grid">
-        {filteredProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
+      {categories.map((category, index) => (
+        <ProjectCarousel
+          key={category.id}
+          category={category}
+          number={index + 1}
+          items={projects.filter((p) => p.categories.includes(category.id))}
+        />
+      ))}
     </section>
   );
 }

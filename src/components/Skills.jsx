@@ -1,29 +1,29 @@
-
-const skills = [
-  ["Frontend", "React, JavaScript, TypeScript, HTML5, CSS3"],
-  ["Styling", "Tailwind CSS, Responsive Design"],
-  ["Backend", "Java, Spring Boot, Python, PHP"],
-  ["Database", "MySQL"],
-  ["APIs", "REST APIs, API Integration"],
-  ["Tools", "Git, GitHub, Docker"]
+const groups = [
+  ["Front-end", ["React", "JavaScript", "TypeScript", "HTML5", "CSS3"]],
+  ["Styling", ["Tailwind CSS", "Responsive design"]],
+  ["Back-end", ["Java", "Spring Boot", "Python", "PHP"]],
+  ["Databases", ["MySQL", "PostgreSQL", "JPA / Hibernate"]],
+  ["APIs", ["REST APIs", "API integration"]],
+  ["Tools", ["Git", "GitHub", "Docker", "Maven", "IntelliJ IDEA"]]
 ];
 
 function Skills() {
   return (
-    <section className="section container" id="skills">
-      <div className="section-heading">
-        <span>TECHNICAL EXPERTISE</span>
-        <h2>Technologies I work with.</h2>
+    <section className="section container split" id="expertise">
+      <div className="section-head">
+        <h2>Technical expertise</h2>
       </div>
 
-      <div className="skills-grid">
-        {skills.map(([name, description]) => (
-          <div className="skill-card" key={name}>
-            <span>{name}</span>
-            <h3>{description}</h3>
+      <dl className="skills">
+        {groups.map(([name, items]) => (
+          <div key={name}>
+            <dt>{name}</dt>
+            <dd>
+              <ul>{items.map((item) => <li key={item}>{item}</li>)}</ul>
+            </dd>
           </div>
         ))}
-      </div>
+      </dl>
     </section>
   );
 }
