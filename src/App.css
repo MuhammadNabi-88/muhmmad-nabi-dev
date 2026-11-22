@@ -112,8 +112,8 @@
 }
 .hero h1 {
   font-family: var(--display);
-  font-weight: 700;
-  font-size: clamp(44px, 7.6vw, 104px);
+  font-weight: 600;
+  font-size: clamp(38px, 7.6vw, 70px);
   line-height: 1.02;
   letter-spacing: -0.04em;
 }
@@ -701,7 +701,7 @@
 .contact h2 {
   font-family: var(--display);
   font-weight: 600;
-  font-size: clamp(32px, 4.6vw, 56px);
+  font-size: clamp(30px, 4.6vw, 50px);
   line-height: 1.08;
   letter-spacing: -0.035em;
   max-width: 14ch;
