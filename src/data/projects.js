@@ -165,7 +165,7 @@ export const projects = [
     technologies: ["PHP", "MySQL", "JavaScript", "CRUD", "Authentication"],
     demo: "https://maison-co-shop.freehosting.dev/",
     github
-  }
+  },
     {
   id: "nexdesk",
   title: "Nexdesk – IT Helpdesk",
