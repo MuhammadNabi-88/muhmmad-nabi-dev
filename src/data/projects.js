@@ -174,7 +174,7 @@ export const projects = [
   description:
     "Ticket system with customer, agent and admin roles, SLA deadlines, internal notes and a dashboard. PHP 8, PDO, MySQL.",
   technologies: ["PHP 8", "MySQL", "PDO", "Authentication", "SLA"],
-  demo: "https://your-nexdesk-link.com",
+  demo: "https://nexdesk.rf.gd/login",
   github // later: `${github}/nexdesk`
 },
 ];
