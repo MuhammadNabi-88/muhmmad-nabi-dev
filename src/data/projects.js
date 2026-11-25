@@ -58,7 +58,7 @@ export const categories = [
   description:
     "Ticket system with customer, agent and admin roles, SLA deadlines, internal notes and a dashboard. PHP 8, PDO, MySQL.",
   technologies: ["PHP 8", "MySQL", "PDO", "Authentication", "SLA"],
-  demo: "https://your-nexdesk-link.com",
+  demo: "http://localhost:8000/dashboard",
   github // later: `${github}/nexdesk`
 },
 ];
