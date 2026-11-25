@@ -50,6 +50,17 @@ export const categories = [
     accent: "#6552E0",
     tint: "#E9E5FF"
   }
+  {
+  id: "nexdesk",
+  title: "Nexdesk – IT Helpdesk",
+  categories: ["php"],
+  art: "list",
+  description:
+    "Ticket system with customer, agent and admin roles, SLA deadlines, internal notes and a dashboard. PHP 8, PDO, MySQL.",
+  technologies: ["PHP 8", "MySQL", "PDO", "Authentication", "SLA"],
+  demo: "https://your-nexdesk-link.com",
+  github // later: `${github}/nexdesk`
+},
 ];
 
 // art: which sketch the generated preview uses until you add a real screenshot.
